@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ede8f5;
+}
+header h1{
+    text-align: center;
+    color: #3d52a0;
+    font-family: 'Poetsen One';
+    font-size: 60px;
+    margin: 20px;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+nav{
+    margin: 20px;
+}
+nav ul li{
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+    background-color: #8697c4;
+    width: 200px;
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+nav ul li:hover{
+    background-color: #ede8f5;
+    border: 2px solid #7091e6;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #ede8f5;
+    width: 100%;
+    transition: .5s;
+}
+nav ul li a:hover{
+    color: #7091e6;
+}
+article{
+    width: 30%;
+    padding: 30px;
+    background-color: #8697c4;
+    border-radius: 12px;
+}
+article h2{
+    font-family: 'Rubik';
+    color: black;
+    font-weight: 800;
+}
+article img{
+    width: 100%;
+    border-radius: 12px;
+    border: black solid 2px;
+    box-shadow: 10px 10px black;
+}
+article p{
+    font-family: 'Rubik';
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: #ede8f5;
+}
+hr{
+    border: 1px dotted rgb(0, 0, 0);
+    border-radius: 5px;
+}
+footer{
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Rubik';
+}
+@media (min-width: 300px) and (max-width: 1000px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 20px 0px;
+    }
+    nav ul li{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    article{
+        width: 80%;
+        margin: auto;
+    }
+}
